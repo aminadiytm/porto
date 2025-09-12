@@ -1,5 +1,5 @@
 /*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -25,8 +25,8 @@
     --default-mono-font-family: var(--font-mono);
     --font-Kantumruy: "Kantumruy Pro", sans-serif;
     --font-Bodoni: "Bodoni Moda", serif;
-    --color-primary: #3396D3;
-    --color-secondary: #F4F4F4;
+    --color-primary: #3396d3;
+    --color-secondary: #f4f4f4;
   }
 }
 @layer base {
@@ -241,17 +241,29 @@
   .h-36 {
     height: calc(var(--spacing) * 36);
   }
+  .h-dvh {
+    height: 100dvh;
+  }
   .min-h-\[100dvh\] {
     min-height: 100dvh;
   }
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
   .w-36 {
     width: calc(var(--spacing) * 36);
+  }
+  .w-52 {
+    width: calc(var(--spacing) * 52);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
   }
   .w-72 {
     width: calc(var(--spacing) * 72);
@@ -305,14 +317,23 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .gap-48 {
     gap: calc(var(--spacing) * 48);
-  }
-  .gap-52 {
-    gap: calc(var(--spacing) * 52);
   }
   .overflow-hidden {
     overflow: hidden;
@@ -328,7 +349,7 @@
     background-color: var(--color-primary);
   }
   .bg-primary\/80 {
-    background-color: color-mix(in srgb, #3396D3 80%, transparent);
+    background-color: color-mix(in srgb, #3396d3 80%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary) 80%, transparent);
     }
@@ -348,6 +369,10 @@
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -401,6 +426,16 @@
       height: calc(var(--spacing) * 20);
     }
   }
+  .sm\:w-80 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 80);
+    }
+  }
+  .sm\:gap-40 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 40);
+    }
+  }
   .sm\:px-10 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 10);
@@ -438,9 +473,9 @@
       width: calc(var(--spacing) * 28);
     }
   }
-  .md\:w-\[450px\] {
+  .md\:w-\[370px\] {
     @media (width >= 48rem) {
-      width: 450px;
+      width: 370px;
     }
   }
   .md\:w-auto {
@@ -485,6 +520,9 @@ body {
   background-color: var(--color-secondary);
   font-family: var(--font-Kantumruy);
   color: var(--color-slate-800);
+}
+#err {
+  background-color: var(--color-primary);
 }
 section {
   padding-inline: calc(var(--spacing) * 4);
