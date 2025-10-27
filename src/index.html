@@ -61,20 +61,20 @@
         </nav>
     </header> -->
     <header id="navbar" class="fixed w-full z-50">
-      <nav class="flex items-center justify-between h-16 px-4 sm:h-20 sm:px-10">
+      <nav class="flex items-center justify-between h-16 px-10 sm:h-32 sm:px-28">
         <div class="font-Bodoni font-semibold text-primary sm:text-lg">amin.dev</div>
         <div
           id="nav-menu"
           class="absolute top-0 left-[-100%] overflow-hidden bg-primary/80 backdrop-blur w-full min-h-[100dvh] flex items-center justify-center md:static md:w-auto md:bg-transparent md:min-h-0"
         >
           <ul
-            class="flex flex-col gap-6 items-center uppercase font-semibold text-secondary md:text-primary md:text-sm md:flex-row text-lg md:font-normal"
+            class="flex flex-col gap-6 items-center uppercase font-semibold text-secondary text-base md:text-primary md:flex-row md:font-normal"
           >
             <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="./404.html" class="nav-link">About</a></li>
-            <li><a href="./404.html" class="nav-link">Experience</a></li>
-            <li><a href="./404.html" class="nav-link">Project</a></li>
-            <li><a href="./404.html" class="nav-link">Contact</a></li>
+            <li><a href="./404.html" class="nav-link hover:font-semibold">About</a></li>
+            <li><a href="./404.html" class="nav-link hover:font-semibold">Experience</a></li>
+            <li><a href="./404.html" class="nav-link hover:font-semibold">Project</a></li>
+            <li><a href="./404.html" class="nav-link hover:font-semibold">Contact</a></li>
           </ul>
           <!-- <div class="absolute top-5 -left-5 opacity-90 md:hidden">
                     <img src="./asset/Ellipse1.png" alt="Ellipse_img" class="w-32 h-32">
@@ -93,15 +93,45 @@
       <section id="home">
         <div class="flex flex-col items-center gap-48 mt-28 sm:gap-40">
           <div class="relative">
-            <img src="./asset/Hero.png" alt="" class="w-72 md:w-[370px]" />
+            <img src="./asset/Hero.png" alt="" class="w-72 md:w-[500px]" />
             <img
               src="./asset/Picture.png"
               alt=""
-              class="w-16 md:w-28 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+              class="w-16 md:w-36 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             />
           </div>
           <div class="bg-primary text-secondary rounded-full px-1 animate-bounce">
             <a href="./404.html"><i class="ri-arrow-down-wide-line"></i></a>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="flex px-48 items-center justify-center gap-10">
+          <div class="flex flex-col">
+            <h1 class="text-4xl font-bold text-primary font-Khand mb-10">
+              About Me
+              <span class="block ml-4 mt-3 h-2 w-24 bg-linear-to-r from-[#3396D3] to-[#EEEEEE] rounded"></span>
+            </h1>
+            <div>
+              <img src="./asset/Picture.png" alt="">
+            </div>
+            <p class="font-Kantumruy text-lg m-0">Hello, I'm <span class="block text-3xl font-semibold my-3 italic">Front-End Developer</span>i build exceptional digital experiences with modern technologies. Focused on creating responsive, user-friendly web applications.</p>
+          </div>
+          <div class="flex flex-col p-20 bg-white gap-6 rounded-xl">
+            <div>
+              <img src="./asset/Hero.png" alt="">
+            </div>
+            <h2 class="text-2xl font-semibold text-primary">My Journey</h2>
+            <p>I started my journey as a self-taught developer, driven by curiosity and a desire to create. Over the years, I've honed my skills through hands-on experience, continuous learning, and collaboration with talented individuals. 
+            </p> 
+            <p>My approach combines technical expertise with creative problem-solving,  allowing me to build solutions that are not only functional but also intuitive and engaging for users.
+            </p>
+            <div class="flex gap-4">
+              <img class="w-16 h-16" src="./asset/javascript_logo.png" alt="">
+              <img class="w-16 h-16" src="./asset/tailwind_logo.png" alt="">
+              <img class="w-16 h-16" src="./asset/vue_logo.png" alt="">
+              <img class="w-16 h-16" src="./asset/laravel_logo.png" alt="">
+            </div>
           </div>
         </div>
       </section>

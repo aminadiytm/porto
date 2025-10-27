@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-Kantumruy: "Kantumruy Pro", sans-serif;
   --font-Inter: "Inter", sans-serif;
   --font-Bodoni: "Bodoni Moda", serif;
+  --font-Khand: "Khand", sans-serif;
   --color-primary: #3396d3;
   --color-secondary: #f4f4f4;
 }
