@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
     />
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -106,19 +107,19 @@
         </div>
       </section>
       <section id="about">
-        <div class="flex flex-col md:flex-row px-6 md:px-48 items-center justify-center gap-20 md:gap-10">
+        <div class="flex flex-col md:flex-row px-6 md:px-48 justify-center gap-20">
           <div class="flex flex-col items-center">
             <h1 class="text-3xl font-bold text-primary text-center font-Khand mb-10 md:text-4xl">
               About Me
               <span class="block md:ml-4 md:mt-3 h-2 w-20 md:w-24 bg-linear-to-r from-[#3396D3] to-[#EEEEEE] rounded"></span>
             </h1>
-            <div class="w-60 mb-6">
+            <div class="w-60 md:w-80 mb-6 md:mb-10">
               <img src="./asset/me.png" alt="">
             </div>
             <p class="font-Kantumruy md:text-lg m-0">Hello, I'm <span class="block text-3xl font-semibold my-3 italic">Front-End Developer</span>i build exceptional digital experiences with modern technologies. Focused on creating responsive, user-friendly web applications.</p>
           </div>
-          <div class="flex flex-col p-2 bg-white gap-6 rounded-lg md:rounded-xl">
-            <div class="mt-4">
+          <div class="flex flex-col p-2 items-center bg-white gap-6 rounded-lg md:rounded-xl">
+            <div class="md:w-96 mt-4">
               <img src="./asset/lsik.png" alt="">
             </div>
             <div class="px-4 flex flex-col gap-6 mb-6">
@@ -127,15 +128,161 @@
               </p> 
               <p>My approach combines technical expertise with creative problem-solving,  allowing me to build solutions that are not only functional but also intuitive and engaging for users.
               </p>
-              <div class="flex justify-center items-center gap-4">
-                <img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/javascript_logo.png" alt="">
-                <img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/tailwind_logo.png" alt="">
-                <img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/vue_logo.png" alt="">
-                <img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/laravel_logo.png" alt="">
+              <div class="flex justify-center items-center gap-4 md:mt-4 md:gap-8 flex-wrap">
+                <a href="https://www.javascript.com/" target="_blank"><img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/javascript_logo.png" alt="JavaScript Logo"></a>
+                <a href="https://tailwindcss.com/" target="_blank"><img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/tailwind_logo.png" alt="Tailwind Logo"></a>
+                <a href="https://vuejs.org/" target="_blank"><img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/vue_logo.png" alt="Vue Logo"></a>
+                <a href="https://laravel.com/" target="_blank"><img class="w-10 h-10 md:w-16 md:h-16 hover:scale-110 transition-transform ease-in-out duration-300" src="./asset/laravel_logo.png" alt="Laravel Logo"></a>
               </div>
             </div>
           </div>
         </div>
+      </section id="experience">
+          <div class="flex flex-col items-center px-6 gap-5 mb-7">
+            <h1 class="flex flex-col items-center font-Khand font-bold text-primary text-3xl text-center">
+              Experience
+              <span class="block h-2 bg-linear-to-r from-[#3396D3] to-[#EEEEEE] w-28"></span>
+            </h1>
+            <p class="text-center text-sm">My professional journey and educational background that have shaped my skills and expertise.</p>
+          </div>
+            <!-- EXPERIENCE -->
+            <div class="p-8 gap-5">
+              <div class="flex items-center mb-6 gap-4 text-xl">
+                <iconify-icon icon="pajamas:work"></iconify-icon>
+                <h1 class=" font-Inter font-semibold"> Experience</h1>
+              </div>
+
+
+              <!-- Card -->
+              <div class="p-5 bg-white rounded-lg">
+                <!-- Card Header -->
+                <div class="flex flex-col mb-5 gap-2">
+                  <div class="flex flex-col font-Inter font-semibold gap-1">
+                    <h2 class="">Front-End Developer</h2>
+                    <p class="text-primary text-sm">PT Hariff Daya Tunggal Engineering</p>
+                  </div>
+                  <div class="w-fit p-2 rounded bg-primary text-sm text-white font-Inter font-medium">
+                    <p>2023 - Present</p>
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="font-Inter text-sm">
+                  <ul class="list-disc ml-4">
+                    <li>Designed and implemented user interfaces for enterprise resource planning (ERP) modules using Laravel Blade templating engine.</li>
+                    <li>Collaborated closely with backend developers and system analysts to integrate frontend components with PostgreSQL-based data structures and APIs</li>
+                    <li>Worked with version control systems (GitLab) and contributed to continuous integration workflows.</li>
+                    <li>Conducted thorough testing and debugging of frontend functionality to maintain reliability and performance.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Card -->
+
+              <!-- Card -->
+              <div class="flex flex-col p-5 bg-white rounded-lg">
+                <!-- Card Header -->
+                <div class="flex justify-between">
+                  <div class="flex-col">
+                    <h2>Customer Data Management</h2>
+                    <p>PT Telkom Indonesia (Persero) Tbk</p>
+                  </div>
+                  <div class="p-2 rounded bg-primary">
+                    <p>2021</p>
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <ul class="list-disc ml-4">
+                    <li>Collected and stored customer data for Treg III Bandung</li>
+                    <li>Validated customer data for Treg III Bandung</li>
+                    <li>Created data visualizations using Looker Studio for company analysis and evaluation</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Card -->
+
+              <!-- Card -->
+              <div class="flex flex-col p-5 bg-white rounded-lg">
+                <!-- Card Header -->
+                <div class="flex justify-between">
+                  <div class="flex-col">
+                    <h2>Information Systems and Decision Laboratory</h2>
+                    <p>Bandung Islamic University</p>
+                  </div>
+                  <div class="p-2 rounded bg-primary">
+                    <p>2021 - 2022</p>
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="">
+                  <ul class="list-disc ml-4">
+                    <li>Assisted lab head and technician in practical sessions</li>
+                    <li>Participated in developing materials for lab sessions (IT, programming logic, database systems, systems analysis and design, ERP systems)</li>
+                    <li>Maintained lab equipment and cleanliness</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+
+            <!-- ORGANIZATION -->
+            <div class="flex flex-col md:flex-row p-8 gap-5">
+              <h1><iconify-icon icon="codicon:organization" class="w-20 h-20 justify-center"></iconify-icon>Organization</h1>
+
+              <!-- Card -->
+              <div class="flex p-5 bg-white rounded-lg">
+                <!-- Card Header -->
+                <div class="flex justify-between">
+                  <div class="flex-col">
+                    <h2>KMTI UNISBA</h2>
+                    <p>Academic Staff</p>
+                  </div>
+                  <div class="p-2 rounded bg-primary">
+                    <p>2019 - 2020</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="flex p-5 bg-white rounded-lg">
+                <!-- Card Header -->
+                <div class="flex justify-between">
+                  <div class="flex-col">
+                    <h2>BEM-FT UNISBA</h2>
+                    <p>Head of Religious Affairs Department</p>
+                  </div>
+                  <div class="p-2 rounded bg-primary">
+                    <p>2021 - 2021</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="flex p-5 bg-white rounded-lg mb-8">
+                <!-- Card Header -->
+                <div class="flex justify-between">
+                  <div class="flex-col">
+                    <h2>GenBI UNISBA</h2>
+                    <p>Research and Development Staff</p>
+                  </div>
+                  <div class="p-2 rounded bg-primary">
+                    <p>2021 - 2022</p>
+                  </div>
+                </div>
+              </div>
+
+              <h1><iconify-icon icon="lets-icons:sertificate" class="w-20 h-20 justify-center"></iconify-icon>Achievements</h1>
+
+              <!-- Card -->
+              <div class="flex-col p-5 text-primary font-semibold bg-white rounded-lg">
+                <p>Top 150 in International Poetry Writing Competition (2020)</p>
+                <p>ERP With Odoo Course: “Roadmap, Business Processes and ERP Implementation” (2021)</p>
+                <p>ERP With Odoo Course: “Finance Accounting” (2022)</p>
+                <p>ERP With Odoo Course: “Inventory and Manufacturing” (2022)</p>
+                <p>Fundamental Software Engineering Course (2023)</p>
+              </div>
+            </div>
+      <section>
+
       </section>
     </main>
 
